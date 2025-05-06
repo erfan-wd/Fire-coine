@@ -2,45 +2,60 @@
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
-    <title>FIRE COIN</title>
+    <title>FIRE COIN - سبک ماینکرفت پویا</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
-        body {
+        * {
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
             font-family: 'Press Start 2P', cursive;
             direction: rtl;
-            background: url('https://www.transparenttextures.com/patterns/8-bit.png') repeat;
-            background-color: #3a3a3a;
             color: #fff;
-            padding: 20px;
-            margin: 0;
+        }
+
+        /* Video background */
+        #bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+            filter: brightness(0.5);
         }
 
         .container {
-            background-color: rgba(34, 27, 13, 0.95);
-            border: 4px solid #228B22;
-            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 4px solid #00ff00;
+            border-radius: 12px;
             padding: 30px;
             max-width: 700px;
-            margin: auto;
-            box-shadow: 0 0 25px #000;
+            margin: 60px auto;
+            box-shadow: 0 0 20px #000;
         }
 
         h1 {
             color: #00ff00;
             text-align: center;
-            font-size: 18px;
-            margin-bottom: 30px;
+            font-size: 16px;
+            margin-bottom: 25px;
         }
 
         .prices {
-            background-color: #222;
+            background-color: #111;
             padding: 15px;
             border-radius: 8px;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
+            border: 2px dashed #ffaa00;
         }
 
         .prices p {
-            font-size: 14px;
+            font-size: 12px;
             margin: 10px 0;
         }
 
@@ -51,19 +66,25 @@
         }
 
         ul {
-            list-style-type: square;
             padding-right: 25px;
         }
 
         li {
             margin-bottom: 10px;
-            font-size: 12px;
+            font-size: 11px;
         }
     </style>
 </head>
 <body>
+
+    <!-- Dynamic Background Video -->
+    <video autoplay muted loop id="bg-video">
+        <source src="https://cdn.coverr.co/videos/coverr-minecraft-village-1095/1080p.mp4" type="video/mp4">
+        مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
+    </video>
+
     <div class="container">
-        <h1>🔥 FIRE COIN - ارز دیجیتال  🔥</h1>
+        <h1>🔥 FIRE COIN - ارز دیجیتال ماجراجویان 🔥</h1>
 
         <div class="prices">
             <p>💰 قیمت خرید: <strong>800,000 دلار</strong></p>
@@ -78,5 +99,6 @@
             <li>نگار سلیمانی - 1.2 سکه</li>
         </ul>
     </div>
+
 </body>
 </html>
